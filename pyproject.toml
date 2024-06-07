@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "hololingo"
+version = "0.1.0"
+description = ""
+authors = ["EliM0 <elisamecp@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+ffmpeg = "^1.4"
+typer = "^0.12.3"
+faster-whisper = "^1.0.1"
+requests = "^2.31.0"
+soundfile = "^0.12.1"
+ultralytics = "^8.2.9"
+torch = {version = "2.2.2+cu118", source = "cuda"}
+torchvision = {version = "0.17.2+cu118", source = "cuda"}
+moviepy = "^1.0.3"
+fastapi = "^0.111.0"
+python-multipart = "^0.0.9"
+pydantic-settings = "^2.3.1"
+
+
+[[tool.poetry.source]]
+name = "cuda"
+url = "https://download.pytorch.org/whl/cu118"
+priority = "explicit"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
