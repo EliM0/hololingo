@@ -119,13 +119,13 @@ To process standard videos recorded with stereo audio, such as those from phones
 First, extract the audio using the following command:
 
 ```bash
-python demo/extract_audio.py <file_name>
+python hololingo/demo/extract_audio.py <file_name>
 ```
 
 Then, you can use the demo script as follows to obtain the videos:
 
 ```bash
-python demo/demo.py <file_name>
+python hololingo/demo/demo.py <file_name>
 ```
 
 In this script, you can specify the video, audio, and output folders with the options `--video`, `--audio`, and `--output`. For more information and additional options, use `--help`.
