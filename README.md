@@ -71,6 +71,15 @@ Now, install the environment along with the HoloLingo package:
 poetry install
 ```
 
+#### Error: CUDA unavailable
+
+To fix this, uninstall all `torch` libraries and reinstall them with this command:
+
+```bash
+pip uninstall torch torchvision torchaudio
+pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu118
+```
+
 ### Unity Project
 
 First, create an empty Unity project and set it up to work with Magic Leap by following these [tutorials](https://developer-docs.magicleap.cloud/docs/guides/unity/getting-started/unity-getting-started/): "Create a Project", "Configure Project Settings", and "Render Pipeline Settings".
