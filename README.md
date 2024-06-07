@@ -27,7 +27,7 @@ This application samples audio every three seconds for translation, capturing an
 
 For reference, the project was developed on a system with an NVIDIA GeForce GTX 1650 Ti graphics card, an Intel i7 processor, and 32GB of RAM.
 
-Regarding performance, the current application runs speaker localization in approximately half a second and translation in 3.5 seconds using Faster Whisper. However, performance with the ML2 is less optimal due to the dependency on WiFi bandwidth for transmitting both audio and images, as well as the limitations of the ML2 hardware.
+Regarding performance, the current application runs speaker localization in approximately half a second and translation in 1.7 seconds using Faster Whisper. However, performance with the ML2 is less optimal due to the dependency on WiFi bandwidth for transmitting both audio and images, as well as the limitations of the ML2 hardware.
 
 In terms of limitations, bandwidth is a critical factor since the overall experience of the application heavily depends on the time it takes for subtitles to appear. Additionally, the app is sensitive to noise. Currently, the app supports a maximum of four people and in this scenario, the app is sensitive to noise; slight noise on the opposite side of the speaker could cause subtitles to shift to the adjacent person.
 
