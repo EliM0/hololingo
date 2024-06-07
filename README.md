@@ -60,7 +60,7 @@ In case you want to modify some aspects of the project, you will also need:
 This project uses Poetry as dependency manager and packaging. In case you do not have install it, you can follor the instructions [here](https://python-poetry.org/docs/). After installing Poetry, you would need to create first a virtual environment with the following commands:
 
 ```bash
-python -m venv .venv
+python -m venv venv
 . .\venv\Scripts\activate # If using Windows Powershell
 . ./venv/bin/activate # If using Unix
 ```
